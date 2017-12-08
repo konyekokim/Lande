@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.konye.lande.WelcomeActivity"
+    tools:showIn="@layout/activity_welcome"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/welcome2"
+        android:text="Welcome"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:gravity="center"
+        fontPath="helvetica_ultra_light.ttf"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="120dp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:stateListAnimator="@null"
+        android:id="@+id/welcome_register_button"
+        android:background="@drawable/crvd_reg_butn_rect"
+        fontPath="helvetica_bold.ttf"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="15dp"
+        android:text="Sign In"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:stateListAnimator="@null"
+        android:id="@+id/welcome_sign_in_button"
+        android:background="@drawable/crvd_sign_butn_rect"
+        fontPath="helvetica_bold.ttf"/>
+
+</LinearLayout>

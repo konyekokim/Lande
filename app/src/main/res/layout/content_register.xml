@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.konye.lande.RegisterActivity"
+    tools:showIn="@layout/activity_register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/register2"
+        android:text="Register here"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:id="@+id/register_header"
+        android:gravity="center"
+        fontPath="helvetica_ultra_light.ttf"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/name_edit_text"
+        fontPath="helvetica_font_normal.ttf"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="Surname"
+        android:inputType="textPersonName"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/surname_edit_text"
+        fontPath="helvetica_font_normal.ttf"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="Sex"
+        android:inputType="textPersonName"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/sex_edit_text"
+        fontPath="helvetica_font_normal.ttf"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/email_edit_text"
+        fontPath="helvetica_font_normal.ttf"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/reg_password_edit_text"
+        fontPath="helvetica_font_normal.ttf"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/reg_confirm_password_edit_text"
+        fontPath="helvetica_font_normal.ttf"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp"
+        android:stateListAnimator="@null"
+        android:id="@+id/register_button"
+        android:background="@drawable/crvd_reg_butn_rect"
+        fontPath="helvetica_bold.ttf"/>
+
+
+</LinearLayout>
+
+

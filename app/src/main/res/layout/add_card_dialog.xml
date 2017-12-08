@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/crvd_add_card"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Card"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textSize="45sp"
+            android:layout_marginTop="73dp"
+            fontPath="helvetica_ultra_light.ttf"/>
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:layout_marginStart="47dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginTop="60dp"
+            android:background="#ffffff" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="Card Number"
+        android:inputType="number"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/add_card_cardNumber"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="Card PIN"
+        android:inputType="numberPassword"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/add_card_cardPin"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#757575"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="2dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/add_card_expiryDate"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:hint="MM"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="15dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/curved_rectangle"
+            android:id="@+id/add_card_cardMonth"
+            android:layout_toEndOf="@+id/add_card_expiryDate" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:hint="YYYY"
+            android:inputType="number"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:background="@drawable/curved_rectangle"
+            android:id="@+id/add_card_cardYear"
+            android:layout_toEndOf="@+id/add_card_cardMonth"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="Card Issuer"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/add_card_cardIssuer"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:hint="CVV"
+        android:inputType="number"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:background="@drawable/curved_rectangle"
+        android:id="@+id/add_card_CVV"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="20dp"
+        android:text="Confirm"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:stateListAnimator="@null"
+        android:id="@+id/add_card_confirm_butn"
+        android:background="@drawable/crvd_reg_butn_rect"
+        android:layout_marginBottom="20dp"
+        fontPath="helvetica_bold.ttf"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/gradient_color"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Skip >"
+        android:textColor="#3d45e7"
+        android:layout_gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:background="@android:color/transparent"
+        android:id="@+id/add_card_skipButton"/>
+
+</LinearLayout>

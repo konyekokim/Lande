@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.konye.lande.HistoryActivity"
+    tools:showIn="@layout/activity_history"
+    tools:ignore="MissingPrefix"
+    android:background="@drawable/bg_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/back_arrow_img"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/top_menu_icon"/>
+
+        <ImageView
+            android:layout_width="9dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/settingsArrow"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/side_menu_icon"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_height="1.8dp"
+            android:background="@drawable/gradient_color"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="History"
+        fontPath="helvetica_font_normal.ttf"
+        android:textColor="#3d45e7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:id="@+id/verifications_layout"
+        android:background="@drawable/curved_layout_background">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/rlogo_side_list"/>
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/verification_main_list"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verifications"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerInParent="true"
+            android:id="@+id/verifications_textView"/>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_color"
+            android:layout_toEndOf="@+id/verifications_textView"
+            android:layout_marginStart="70dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/open_ver_imgView"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:id="@+id/applications_layout"
+        android:background="@drawable/curved_layout_background">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/plogo_side_list"/>
+        
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="52dp"
+            android:background="@drawable/application_main_list"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Applications"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_centerInParent="true"
+            android:id="@+id/applications_textView"/>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient_color"
+            android:layout_toEndOf="@+id/applications_textView"
+            android:layout_marginStart="70dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/open_app_imgView"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+

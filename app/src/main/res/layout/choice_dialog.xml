@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="What would you like to do?"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:textColor="#3d45e7"
+        android:id="@+id/choice_textView"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/gradient_color" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:text="Verification of CofO"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:stateListAnimator="@null"
+        android:id="@+id/choice_verification_button"
+        android:background="@drawable/crvd_reg_butn_rect"
+        fontPath="helvetica_bold.ttf"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Fresh Land Application"
+        android:textColor="#ffffff"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:paddingTop="13dp"
+        android:paddingBottom="13dp"
+        android:stateListAnimator="@null"
+        android:id="@+id/choice_fresh_land_app_button"
+        android:background="@drawable/crvd_sign_butn_rect"
+        android:layout_marginBottom="50dp"
+        fontPath="helvetica_bold.ttf"/>
+
+</LinearLayout>

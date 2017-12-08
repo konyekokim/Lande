@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.konye.lande.IndividualFormActivity"
+    tools:showIn="@layout/activity_individual_form"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gradient_color"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Individual Form"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="#3d45e7"
+        android:id="@+id/otp_textView"/>
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Application Date"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#757575"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingEnd="2dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ind_applicationDate_textView"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:hint="DD"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/curved_rectangle"
+                    android:id="@+id/ind_app_date"
+                    android:layout_toEndOf="@+id/ind_applicationDate_textView" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/curved_rectangle"
+                    android:id="@+id/ind_app_month"
+                    android:layout_toEndOf="@+id/ind_app_date" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:hint="YYYY"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/curved_rectangle"
+                    android:id="@+id/ind_app_year"
+                    android:layout_toEndOf="@+id/ind_app_month"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/curved_rectangle"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Title"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#757575"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:id="@+id/ind_choose_title_textView"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ind_choose_title_arrow_icon"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/curved_rectangle"
+                android:id="@+id/ind_app_first_name"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Middle Name"
+                android:inputType="textPersonName"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/curved_rectangle"
+                android:id="@+id/ind_app_middle_name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Surname"
+                android:inputType="textPersonName"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/curved_rectangle"
+                android:id="@+id/ind_app_surname"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/curved_rectangle"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Select Gender"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#757575"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:id="@+id/ind_gender_textView"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ind_gender_arrow_icon"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#757575"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingEnd="2dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:id="@+id/ind_dob_textView"/>
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:hint="DD"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/curved_rectangle"
+                    android:id="@+id/ind_dob_date"
+                    android:layout_toEndOf="@+id/ind_dob_textView" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:hint="MM"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/curved_rectangle"
+                    android:id="@+id/ind_dob_month"
+                    android:layout_toEndOf="@+id/ind_dob_date" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:hint="YYYY"
+                    android:inputType="number"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/curved_rectangle"
+                    android:id="@+id/ind_dob_year"
+                    android:layout_toEndOf="@+id/ind_dob_month"/>
+
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Occupation"
+                android:inputType="text"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/curved_rectangle"
+                android:id="@+id/ind_app_occupation"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Number of Children"
+                android:inputType="number"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/curved_rectangle"
+                android:id="@+id/ind_app_numb_children"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:hint="Nationality"
+                android:inputType="textPersonName"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@drawable/curved_rectangle"
+                android:id="@+id/ind_app_nationality"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

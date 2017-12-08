@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maps_drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingPrefix">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#fff3f3f3"
+            android:id="@+id/top_bar_relativeLayout">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="15dp"
+                android:id="@+id/top_menu_icon"
+                android:background="@drawable/top_menu_icon"/>
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/side_menu_icon"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_height="1.8dp"
+                android:background="@drawable/gradient_color"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:layout_below="@+id/top_bar_relativeLayout"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.konye.lande.MapsActivity"
+            map:cameraZoom="17"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingEnd="2dp"
+        android:layout_gravity="start"
+        android:id="@+id/navigation_drawer_layout"
+        android:background="#fff3f3f3"
+        android:layout_below="@+id/top_bar_relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_info_layout">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:id="@+id/user_img"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bdbdbd"
+                android:layout_below="@+id/user_img"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/user_name_textView"
+                android:text="Susan"
+                android:textColor="#3d47e5"
+                android:layout_marginTop="40dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                fontPath="helvetica_bold.ttf"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View profile"
+                android:textColor="#bdbdbd"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/user_name_textView"
+                android:id="@+id/view_profile_textView"
+                android:textSize="12sp"
+                fontPath="helvetica_bold.ttf"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/history_side_layout"
+            android:layout_below="@+id/user_info_layout">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:id="@+id/history_icon"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="History"
+                android:textColor="#9e9e9e"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toEndOf="@+id/history_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                fontPath="helvetica_font_normal.ttf"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bdbdbd"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/history_icon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cofo_side_layout"
+            android:layout_below="@+id/history_side_layout">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:id="@+id/cofo_icon"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CofO Verification"
+                android:textColor="#9e9e9e"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toEndOf="@+id/cofo_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                fontPath="helvetica_font_normal.ttf"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bdbdbd"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/cofo_icon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/freshlandapp_side_layout"
+            android:layout_below="@+id/cofo_side_layout">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:id="@+id/freshlandapp_icon"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fresh Land Application"
+                android:textColor="#9e9e9e"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toEndOf="@+id/freshlandapp_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                fontPath="helvetica_font_normal.ttf"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bdbdbd"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/freshlandapp_icon"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/settings_side_layout"
+            android:layout_below="@+id/freshlandapp_side_layout">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:id="@+id/settings_icon"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:textColor="#9e9e9e"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_toEndOf="@+id/settings_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                fontPath="helvetica_font_normal.ttf"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#bdbdbd"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/settings_icon"/>
+
+        </RelativeLayout>
+        
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>
+
+
+
